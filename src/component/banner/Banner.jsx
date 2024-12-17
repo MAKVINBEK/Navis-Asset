@@ -1,7 +1,7 @@
 import css from "./Banner.module.css"
 import { Link } from "react-router-dom";
 import banner2 from "../../assets/banner2.png"
-import icon from "../../assets/icon.png"
+import icon from "/src/assets/icon.png"
 
 const Banner = () => {
     return(
