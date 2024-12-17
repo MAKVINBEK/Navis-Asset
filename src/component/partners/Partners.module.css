@@ -1,0 +1,47 @@
+.partnersContainer {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1358px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+}
+
+.slider img{
+    cursor: pointer;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.duplicate {
+    position: absolute;
+    left: 100%;
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .slider img{
+        width: 73px;
+        height: auto;
+        background-size: cover;
+    }
+}

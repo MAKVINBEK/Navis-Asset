@@ -1,0 +1,161 @@
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.block1_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: auto;
+}
+
+.block1_2_1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.block1_2_1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title{
+    font-size: 16px;
+    color:#6f6f6f;
+}
+
+.block1_2_1 p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.block1_2_2{
+    background: linear-gradient(40deg, #D4151c, #d35400);
+    border-radius: 12px;
+    padding: 30px 20px;
+}
+
+.block1_2_2 h2{
+    color: #ffffff;
+}
+
+.block1_2_2 p{
+    color: #f5f7fa;
+    font-size: 16px;
+}
+
+.block1_1{
+    border-radius: 12px;
+    padding:30px 20px;
+    background-color: #f5f7fa;
+    margin-top: 10px;
+}
+
+.block2{
+    max-width: 100%;
+}
+
+.block2 img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.block1_1 p{
+    margin-top: 10px;
+}
+
+.content h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.blockEnd{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blockEnd1{
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.blockEnd1 p{
+    margin-top: 160px;
+    color: #f5f7fa;
+}
+
+.bloc{
+    color: #ffffff;
+    background-color: #000;
+}
+
+.blok{
+    background-color: #f5f7fa;
+}
+
+.blok p{
+    color: #6f6f6f;
+}
+
+.blockTitle{
+    margin-top: 150px;
+}
+
+.blockTitle div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.blockTitle div h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.blockTitle div p{
+    font-size: 20px;
+    color: #6f6f6f;
+    line-height: 24px;
+}
+
+@media (max-width: 768px){
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .block1_2{
+        max-width: 100%;
+    }
+
+    .blockTitle div{
+        grid-template-columns: 1fr;
+    }
+
+    .content h2{
+        font-size: 24px;
+    }
+
+    .title{
+        font-size: 14xp;
+    }
+
+    .block1_2_1 p{
+        font-size: 14px;
+    }
+
+    .block1_2_1 h5{
+        font-size: 12px;
+    }
+    
+}
+
+

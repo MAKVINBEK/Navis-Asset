@@ -1,0 +1,79 @@
+.content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.banner1{
+    background-color: #f5f7fa;
+    border-radius: 30px;
+    padding: 40px 30px;
+}
+
+.banner1 h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.banner1 p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6f6f6f;
+    margin-top: 40px;
+    line-height: 20px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.buttons{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.buttons:active{
+    transform: scale(.9);
+}
+
+.buttonClick{
+    border: none;
+    background: linear-gradient(30deg, #D4151c, #d35400);
+}
+
+.buttonClick a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.banner2 img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+@media (max-width: 768px){
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .buttons{
+        font-size: 14px;
+    }
+
+    .banner1 h1{
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,82 @@
+.formContainer {
+    padding: 30px;
+    background: #f5f7fa;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10.5px;
+  }
+  
+  .formGroup input,
+  .formGroup select {
+    padding: 10.5px 16px;
+    font-size: 14px;
+    color: #6f6f6f;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .formGroupCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #acacac;
+  }
+  
+  .formGroupCheckbox input {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .formGroupCheckbox label a {
+    background: linear-gradient(to right, #D4151c, #d35400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    margin-left: 5px;
+  } 
+
+  .submitButton {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #D4151c, #d35400);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background: linear-gradient(to right, #d35400, #D4151c);
+  }
+
+  @media (max-width: 768px) {
+    .formRow{
+      flex-direction: column;
+      
+    }
+}
