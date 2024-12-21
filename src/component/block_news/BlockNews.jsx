@@ -52,7 +52,6 @@ const BlockNews = () =>{
                    </div>
                 <div className={css.frame}>
                     {Data.map((el) => (
-                        <Link to="/news">
                         <div key={el.id} className={css.block}  onClick={() => navigate(`/NewsId/${id}`)}>
                             <img src={el.image} alt="" />
                             <div className={css.popit}>
@@ -63,7 +62,6 @@ const BlockNews = () =>{
                                 </div>
                             </div>
                         </div>
-                        </Link>
                         
                     ))}
                 </div>
