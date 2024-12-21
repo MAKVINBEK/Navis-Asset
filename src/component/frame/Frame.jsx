@@ -18,7 +18,7 @@ const Frame = () => {
                         </div>
                         <div className={css.block1_2_2}>
                             <h2>45+</h2>
-                            <p>Довольных клиентов</p>
+                            <p>Довольных  клиентов</p>
                         </div>
                     </div>
                     <div className={css.block1_1}>
