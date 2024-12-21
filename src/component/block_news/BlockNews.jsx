@@ -1,7 +1,7 @@
 import css from "./BlockNews.module.css"
-import frame11 from "../../assets/frame 11.png"
+import frame11 from "../../assets/frame11.png"
 import frame111 from "../../assets/frame 11 (1).png"
-import icon5 from "../../assets/icon (5).png"
+import icon5 from "../../assets/icon(5).png"
 import icon from "../../assets/icon.png"
 import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom';
@@ -52,6 +52,7 @@ const BlockNews = () =>{
                    </div>
                 <div className={css.frame}>
                     {Data.map((el) => (
+                        <Link to="/news">
                         <div key={el.id} className={css.block}  onClick={() => navigate(`/NewsId/${id}`)}>
                             <img src={el.image} alt="" />
                             <div className={css.popit}>
@@ -62,6 +63,7 @@ const BlockNews = () =>{
                                 </div>
                             </div>
                         </div>
+                        </Link>
                         
                     ))}
                 </div>
