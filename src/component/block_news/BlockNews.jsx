@@ -2,7 +2,7 @@ import css from "./BlockNews.module.css"
 import frame11 from "../../assets/frome.png"
 import frame111 from "../../assets/frame 11 (1).png"
 import icon5 from "../../assets/streluat.png"
-import icon from "../../assets/icon.png"
+import icon from "../../assets/colop.png"
 import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom';
 
