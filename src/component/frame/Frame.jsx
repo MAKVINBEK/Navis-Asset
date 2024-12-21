@@ -1,7 +1,7 @@
 import css from "./Frame.module.css"
 import photo13 from "../../assets/photo (13).png"
 import frame35 from "../../assets/frani.png"
-import frame36 from "../../assets/frame 36.png"
+import frame36 from "../../assets/framenon.png"
 
 const Frame = () => {
     return(
