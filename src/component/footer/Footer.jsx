@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="container">
                 <div className={css.block}>
                     <div className={css.block1}>
-                    <Link to="/menu"><img src={logo} alt="" /></Link>
+                    <Link to="/"><img src={logo} alt="" /></Link>
                     <p className={css.title+' '+css.span}>
                     Это международный сервис, где вам <br /> быстро и надежно восстановят ваш <br /> забытый криптокошелёк
                     </p>

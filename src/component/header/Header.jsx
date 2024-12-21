@@ -69,7 +69,7 @@ const Header = () => {
                         <Hamburger toggled={Open} toggle={setOpen} />
                     </div>
 
-                    <Link to="/menu" className={css.logotip}><img src={logo} alt="" /></Link>
+                    <Link to="/" className={css.logotip}><img src={logo} alt="" /></Link>
 
                     <nav className={Open ? css.menu + " " + css.active : css.menu}>
                         <div className={css.hedr}>
