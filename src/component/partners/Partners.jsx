@@ -4,12 +4,13 @@ import image2 from "../../assets/image 1895.png"
 import image3 from "../../assets/image 1896.png"
 import image4 from "../../assets/image 1898.png"
 import image5 from "../../assets/image 1897.png"
+import { Link } from "react-router-dom"
 
 const Partners = () => {
     const images = [image1, image2, image3, image4, image5];
 
     return (
-        <div className={css.partnersContainer}>
+        <div id="partners" className={css.partnersContainer}>
             {/* Основной слайдер */}
             <div className={css.slider}>
                 {images.map((image, index) => (
@@ -24,6 +25,7 @@ const Partners = () => {
                 ))}
             </div>
         </div>
+        
         
         
     );

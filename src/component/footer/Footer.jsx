@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="container">
                 <div className={css.block}>
                     <div className={css.block1}>
-                    <Link to="/"><img src={logo} alt="" /></Link>
+                    <Link to="/menu"><img src={logo} alt="" /></Link>
                     <p className={css.title+' '+css.span}>
                     Это международный сервис, где вам <br /> быстро и надежно восстановят ваш <br /> забытый криптокошелёк
                     </p>
@@ -22,18 +22,18 @@ const Footer = () => {
           <div className={css.block2}>
                     <div className={css.bloking}>
                     <h5>Основное</h5>
-                    <a className={css.title} href="#">О нас</a>
-                    <a className={css.title} href="#">Контакты</a>
-                    <a className={css.title} href="#">Партнеры</a>
+                    <Link to="/about-us" className={css.title}>О нас</Link>
+                    <Link to="/contacts" className={css.title}>Контакты</Link>
+                    <Link to="" className={css.title}>Партнеры</Link>
                     <a className={css.title} href="#">Почему <br /> NavisAsset?</a>
                 </div>
 
                 <div className={css.bloking}>
                     <h5>Пользователям</h5>
-                    <a className={css.title} href="#">Услуги</a>
-                    <a className={css.title} href="#">Отзывы</a>
-                    <a className={css.title} href="#">Прайс</a>
-                    <a className={css.title} href="#">Новости</a>
+                    <Link to="/services" className={css.title}>Услуги</Link>
+                    <Link to="/reviews" className={css.title} >Отзывы</Link>
+                    <Link to='/price' className={css.title} >Прайс</Link>
+                    <Link to="" className={css.title} >Новости</Link>
                 </div>
                 </div>
                 

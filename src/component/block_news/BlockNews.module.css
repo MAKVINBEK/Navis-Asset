@@ -1,0 +1,105 @@
+.h2{
+    font-size: 50px;
+    font-weight: 600px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.date{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6f6f6f;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.click{
+    min-width: 40px;
+    height: 40px;
+    border-radius:100%;
+    border: none;
+    background: linear-gradient(to right, #d4151b2c, #d3540036);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.clickcap{
+min-width: 50px;
+height: 50px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+}
+
+.block{
+    display: flex;
+    gap: 15px;
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.frame a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttonLong{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.long{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+.long img{
+    margin-left: 5px;
+    margin-bottom: -3px;
+}
+
+.long:hover{
+    transform:scale(.9);
+}
+
+.popit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+}

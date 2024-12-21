@@ -83,6 +83,12 @@
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+ }
+
+ .block2 button:hover{
+   transform: scale(.9);
  }
 
  @media( max-width: 680px){

@@ -38,7 +38,7 @@ const Frame = () => {
                 <div className={css.blockEnd}>
                     <div className={css.blockEnd1+" "+css.bloc}>
                         <h2>10+</h2>
-                        <p  className={css.title}> Профессиональных сотрудников команды</p>
+                        <p className={css.title}> Профессиональных сотрудников команды</p>
                     </div>
                     <div className={css.blockEnd1+" "+css.blok}>
                         <h2>Гарантия</h2>
