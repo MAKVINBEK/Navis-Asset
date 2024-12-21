@@ -1,6 +1,6 @@
 import css from "../block_news/BlockNews.module.css"
 import { Data } from "../block_news/BlockNews";
-import frame11 from "../../assets/frame11.png"
+import frame11 from "../../assets/frome.png"
 import icon5 from "../../assets/icon(5).png"
 import icon from "../../assets/icon.png"
 

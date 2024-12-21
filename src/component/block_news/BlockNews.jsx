@@ -1,5 +1,5 @@
 import css from "./BlockNews.module.css"
-import frame11 from "../../assets/frame11.png"
+import frame11 from "../../assets/frome.png"
 import frame111 from "../../assets/frame 11 (1).png"
 import icon5 from "../../assets/icon(5).png"
 import icon from "../../assets/icon.png"
