@@ -24,7 +24,6 @@ function App() {
           <Route path='/reviews' element={<ReviewCard/>} />
           <Route path='/price' element={<PriceBlock/>} />
           <Route path='/application' element={<Application/>} />
-          <Route path='/news' element={<News/>} />
         </Routes>
         <Footer />
       </Router>

@@ -3,7 +3,6 @@ import { Data } from "../block_news/BlockNews";
 import frame11 from "../../assets/frame 11.png"
 import icon5 from "../../assets/icon (5).png"
 import icon from "../../assets/icon.png"
-import { useNavigate } from "react-router-dom"
 
 const News = () => {
     return(
