@@ -24,7 +24,7 @@ const Header = () => {
     ];
 
     const menuItems = [
-        { path: "/menu" },
+        { path: "/" },
         { name: "Услуги", path: "/services" },
         { name: "Прайс", path: "/price" },
         { name: "Отзывы", path: "/reviews" },
