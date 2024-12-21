@@ -10,7 +10,6 @@ import Give from './component/give/Give';
 import ReviewCard from './component/reviewCard/ReviewCard';
 import PriceBlock from './component/price_block/Price_Block';
 import Application from './component/application/Application';
-import News from './component/news/News';
 
 function App() {
   return (
