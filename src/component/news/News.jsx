@@ -1,47 +1,46 @@
-import css from "../block_news/BlockNews.module.css"
-import { Data } from "../block_news/BlockNews";
-import frame11 from "../../assets/frome.png"
-import icon5 from "../../assets/streluat.png"
-import icon from "../../assets/colop.png"
+import { HashLink } from "react-router-hash-link";
+import { data } from "../block_news/BlockNews";
+import "./News.css"
+import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
-const News = () => {
-    return(
-        <section className="container">
-            <h2 className={css.h2}>Новости</h2>
-            <div className={css.content}>
-                <div className={css.blockLeft}>
-                    <img className={css.image} src={frame11} alt="" />
-                        <div className={css.kazn}>
-                    <p className={css.text}>Команда отец-сын говорит, что им удалось восстановить $6 млн утраченной криптовалюты</p>
-                    <div className={css.flex}>
-                        <span className={css.date}>11.06.2024 12:30</span>
-                        <button className={css.click+" "+css.clickcap}><img src={icon5} alt="" /></button>
-                    </div>
-                    </div>
-                   </div>
-                <div className={css.frame}>
-                    {Data.map((el) => (
-                        <div key={el.id} className={css.block}  onClick={() => navigate(`/NewsId/${id}`)}>
-                            <img src={el.image} alt="" />
-                            <div className={css.popit}>
-                                <p className={css.text}>{el.title}</p>
-                                <div className={css.flex}>
-                                <span className={css.date}>{el.date}</span>
-                                <button className={css.click}><img src={icon5} alt="" /></button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    ))}
-                </div>
+const Detail = () => {
+    const { id } = useParams(); // Получаем ID из URL
+    const navigate = useNavigate();
+
+    // Состояние для "фокусной" фотографии
+    const [selectedId, setSelectedId] = useState(Number(id));
+
+    // Находим выбранную фотографию
+    const selectedItem = data.find((item) => item.id === selectedId);
+
+    if (!selectedItem) return <p>Новость не найдена!</p>;
+
+    return (
+        <div className="detail-page">
+            <div className="main-detail">
+                <img src={selectedItem.image} alt={selectedItem.title} />
+                <h2>{selectedItem.title}</h2>
+                <p>{selectedItem.description}</p>
+                <span>{selectedItem.date}</span>
             </div>
-            <div className={css.buttonLong}>
-            <button className={css.long}>Подробнее <img src={icon} alt="" /></button>
+            <div className="side-gallery">
+                {data.map((item) => (
+                    <div
+                        key={item.id}
+                        className={`side-item ${item.id === selectedId ? "active" : ""}`}
+                        onClick={() => setSelectedId(item.id)}
+                    >
+                        <img src={item.image} alt={item.title} />
+                        <p>{item.title}</p>
+                        <span>{item.date}</span>
+                    </div>
+                ))}
             </div>
-        </section>
+            <HashLink smooth to="/#gallery">Назад</HashLink>
+        </div>
+    );
+};
 
+export default Detail;
 
-    )
-}
-
-export default News

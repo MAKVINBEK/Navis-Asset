@@ -132,6 +132,7 @@
         background-color: #fff;
         padding-top: 10px;
         padding-left: 20px;
+        transition: left 1s ease;
   }
 
   .hedr{
