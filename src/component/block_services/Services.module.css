@@ -12,7 +12,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(to right, #d4151b23, #d3540023);
+    background:#f8e9ea;
 }
 
 .blockServices h3{
@@ -40,14 +40,19 @@
     padding: 30px;
     background: #f5f7fa;
     border-radius: 20px;
+    transition: .3s;
 }
 
-.blockRed{
+.blockRed:hover{
     color: #ffffff;
     background: linear-gradient(to right, #D4151c, #d35400);
 }
 
-.bbbb{
+.blockRed:hover>p{
+    color: #f5f7fa;
+}
+
+.blockRed:hover>.bbbb{
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -57,9 +62,6 @@
     border-radius: 50%;
 }
 
-.blockRed p{
-    color: #f5f7fa;
-}
 
 @media (max-width: 768px){
     .content{

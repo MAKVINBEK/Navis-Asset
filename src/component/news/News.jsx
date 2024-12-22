@@ -3,6 +3,8 @@ import { data } from "../block_news/BlockNews";
 import "./News.css"
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import icon5 from "../../assets/streluat.png"
+import { GoArrowLeft } from "react-icons/go";
 
 const Detail = () => {
     const { id } = useParams(); // Получаем ID из URL
@@ -17,28 +19,35 @@ const Detail = () => {
     if (!selectedItem) return <p>Новость не найдена!</p>;
 
     return (
-        <div className="detail-page">
-            <div className="main-detail">
-                <img src={selectedItem.image} alt={selectedItem.title} />
-                <h2>{selectedItem.title}</h2>
-                <p>{selectedItem.description}</p>
-                <span>{selectedItem.date}</span>
+        <div className="container">
+            <HashLink  smooth to="/#gallery"><div className="syns"><GoArrowLeft /></div></HashLink>
+            <div className="content">
+                <div className="blockLeft">
+                    <h2>{selectedItem.title}</h2>
+                    <span className="date">{selectedItem.date}</span>
+                    <img src={selectedItem.image} alt={selectedItem.title} />
+                    <p>{selectedItem.description}</p>
+                </div>
+                <div className="frame">
+                    {data.map((item) => (
+                        <div
+                            key={item.id}
+                            className={`block ${item.id === selectedId ? "active" : ""}`}
+                            onClick={() => setSelectedId(item.id)}>
+                            <img src={item.image} alt={item.title} />
+                            <div className="popit">
+                                <p className="text">{item.title}</p>
+                                <div className="flex">
+                                    <span className="date">{item.date}</span>
+                                    <button className="click"><img src={icon5} alt="" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className="side-gallery">
-                {data.map((item) => (
-                    <div
-                        key={item.id}
-                        className={`side-item ${item.id === selectedId ? "active" : ""}`}
-                        onClick={() => setSelectedId(item.id)}
-                    >
-                        <img src={item.image} alt={item.title} />
-                        <p>{item.title}</p>
-                        <span>{item.date}</span>
-                    </div>
-                ))}
-            </div>
-            <HashLink smooth to="/#gallery">Назад</HashLink>
         </div>
+
     );
 };
 

@@ -11,6 +11,7 @@ import ReviewCard from './component/reviewCard/ReviewCard';
 import PriceBlock from './component/price_block/Price_Block';
 import Application from './component/application/Application';
 import Detail from './component/news/News';
+import BlockNews from './component/block_news/BlockNews';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/price' element={<PriceBlock/>} />
           <Route path='/application' element={<Application/>} />
           <Route path='/news/:id' element={<Detail/>} />
+          <Route path='/all' element={<BlockNews/>} />
         </Routes>
         <Footer />
       </Router>
