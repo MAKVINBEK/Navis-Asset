@@ -2,13 +2,12 @@ import { HashLink } from "react-router-hash-link";
 import { data } from "../block_news/BlockNews";
 import "./News.css"
 import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import icon5 from "../../assets/streluat.png"
+import { useParams} from "react-router-dom";
+import icon5 from "../../assets/streluat.jpeg"
 import { GoArrowLeft } from "react-icons/go";
 
 const Detail = () => {
     const { id } = useParams(); // Получаем ID из URL
-    const navigate = useNavigate();
 
     // Состояние для "фокусной" фотографии
     const [selectedId, setSelectedId] = useState(Number(id));

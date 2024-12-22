@@ -1,5 +1,5 @@
 .blockLeft h2{
-    font-size: 30ox;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -130,6 +130,7 @@ height: 50px;
 
 @media (max-width: 768px){
     .content{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }
