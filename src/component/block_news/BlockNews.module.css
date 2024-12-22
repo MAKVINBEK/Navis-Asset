@@ -54,6 +54,7 @@ height: 50px;
 .block{
     display: flex;
     gap: 15px;
+    cursor: pointer;
 }
 
 .frame{
