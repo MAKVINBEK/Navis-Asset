@@ -16,7 +16,7 @@ const Accordion = ({ title, content }) => {
        <div className={styles.accordion}>
         <div className={styles.title}>
             <p>{title}</p>
-            <button className={styles.click}  onClick={toggleAccordion}><span>{isOpen ?<GrSubtract /> : <GrAdd />}</span></button>
+            <button className={styles.click}  onClick={toggleAccordion}>{isOpen ?<GrSubtract /> : <GrAdd />}</button>
         </div>
       
       <div className={`${styles.content} ${isOpen ? styles.open : styles.closed}`}>

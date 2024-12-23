@@ -1,25 +1,25 @@
-.parent{
+.parent {
   background-color: #ffffff;
-  border-bottom:1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
 }
 
-.content{
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
-.start{
+.start {
   display: flex;
   gap: 15px;
 }
 
-.dropdownButton{
+.dropdownButton {
   width: 120px;
   height: 50px;
   display: flex;
@@ -32,17 +32,17 @@
   font-size: 16px;
 }
 
-.buttonBlack{
+.buttonBlack {
   color: #ffffff;
   background-color: #000;
   transition: .3s;
 }
 
-.buttonBlack:active{
+.buttonBlack:active {
   transform: scale(0.9);
 }
 
-.dropdownMenu{
+.dropdownMenu {
   list-style: none;
   position: absolute;
   background-color: #f5f7fa;
@@ -54,7 +54,7 @@
   padding: 5px 0;
 }
 
-.dropdownMenu li{
+.dropdownMenu li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -81,14 +81,14 @@
 
 .menu_item.active {
   background: linear-gradient(to right, #D4151c, #d35400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu_item:hover {
   background: linear-gradient(to right, #D4151c, #d35400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .line {
@@ -100,57 +100,57 @@
   transition: 0.3s ease;
 }
 
-.burgerMenu{
+.burgerMenu {
   display: none;
 }
 
-.langs{
+.langs {
   display: none;
 }
 
 @media (max-width: 768px) {
 
-  .logotip{
+  .logotip {
     margin-left: 20px;
   }
 
-  .content{
+  .content {
     display: grid;
     grid-template-columns: 0fr 1fr 0fr;
   }
 
   .menu {
     flex-direction: column;
-        position: fixed;
-        left: -100%;
-        gap: 20px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 70%;
-        height: 100%;
-        background-color: #fff;
-        padding-top: 10px;
-        padding-left: 20px;
-        transition: left 1s ease;
+    position: fixed;
+    left: -100%;
+    gap: 20px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+    transition: left 1s ease;
   }
 
-  .hedr{
+  .hedr {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     padding-right: 30px;
   }
 
-  .select{
+  .select {
     display: none;
   }
 
-  .line{
+  .line {
     display: none;
   }
 
-  .langs{
+  .langs {
     display: block;
   }
 
@@ -158,34 +158,29 @@
     font-size: 18px;
     font-weight: 500;
   }
-  .burgerMenu{
-  display: block;
-  
-}
 
-.burger_menu{
-  color: #9a9a9a;
-}
+  .burgerMenu {
+    display: block;
 
-.active {
-  left: 0;
-}
-}
+  }
 
+  .burger_menu {
+    color: #9a9a9a;
+  }
 
+  .active {
+    left: 0;
+  }
+}
 
 @media (max-width: 480px) {
-  .content {
-    
-  }
+  .content {}
 
-  .menu {
-    
-  }
+  .menu {}
 
   .menu_item {
     font-size: 14px;
-    
+
   }
 
   .dropdownButton {
@@ -199,4 +194,3 @@
     width: 100px;
   }
 }
-

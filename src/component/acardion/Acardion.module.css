@@ -1,11 +1,10 @@
 .accordion {
     overflow: hidden;
     border-bottom: 1px solid #d8d8d8;
-    margin-top: 30px;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
     padding: 25px 0px;
     width: 100%;
@@ -15,8 +14,8 @@
   }
 
   .click{
-    min-width: 60px;
-    height: 60px;
+    min-width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: none;
     background: linear-gradient(to right, #d4151b2c, #d3540036);
@@ -24,35 +23,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .click span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    background: linear-gradient(to right, #D4151c, #d35400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    color: #D4151c;
     transition:transform 0.3s ease;
-    color:#D4151c;
   }
   
   .content {
     width: 90%;
-    max-height: 0;
-    overflow: auto;
     scrollbar-width: none;
     background-color: #fff;
     transition: .3s;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
     line-height: 24px;
     color: #6f6f6f;
   }
   
   .open {
-    max-height: 300px; /* Задайте максимальную высоту для контента */
     padding-bottom: 15px;
     transition: .3s;
   }
@@ -63,7 +49,7 @@
   }
 
   .name{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     margin-top: 100px;
@@ -79,12 +65,9 @@
     }
 
     .click{
-      min-width: 40px;
-      height: 40px;
-    }
-
-    .click span{
-      font-size: 30px;
+      min-width: 30px;
+      height: 30px;
+      font-size: 20px;
     }
 
     .content{

@@ -51,12 +51,6 @@
 }
 
 
-
-.clickcap{
-min-width: 50px;
-height: 50px;
-}
-
 .flex{
     display: flex;
     justify-content: space-between;
@@ -82,36 +76,6 @@ height: 50px;
 
 }
 
-.frame a{
-    text-decoration: none;
-    color: black;
-}
-
-.buttonLong{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.long{
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    transition: .3s;
-}
-
-.long img{
-    margin-left: 5px;
-    margin-bottom: -3px;
-}
-
-.long:hover{
-    transform:scale(.9);
-}
-
 .popit{
     display: flex;
     flex-direction: column;
@@ -127,7 +91,7 @@ height: 50px;
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 50px;
 }
 

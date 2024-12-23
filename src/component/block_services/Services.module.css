@@ -12,7 +12,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background:#f8e9ea;
+    background: linear-gradient(to right, #d4151b23, #d3540023);
 }
 
 .blockServices h3{
@@ -30,7 +30,7 @@
 }
 
 .My{
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 600;
     text-align: center;
     margin-top: 100px;
@@ -40,19 +40,14 @@
     padding: 30px;
     background: #f5f7fa;
     border-radius: 20px;
-    transition: .3s;
 }
 
-.blockRed:hover{
+.blockRed{
     color: #ffffff;
     background: linear-gradient(to right, #D4151c, #d35400);
 }
 
-.blockRed:hover>p{
-    color: #f5f7fa;
-}
-
-.blockRed:hover>.bbbb{
+.bbbb{
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -62,6 +57,9 @@
     border-radius: 50%;
 }
 
+.blockRed p{
+    color: #f5f7fa;
+}
 
 @media (max-width: 768px){
     .content{
