@@ -3,7 +3,7 @@ import { data } from "../block_news/BlockNews";
 import "./News.css"
 import React, { useState } from "react";
 import { useParams} from "react-router-dom";
-import icon5 from "../../assets/streluat.jpeg"
+import icon5 from "../../assets/strelat.jpeg"
 import { GoArrowLeft } from "react-icons/go";
 
 const Detail = () => {
