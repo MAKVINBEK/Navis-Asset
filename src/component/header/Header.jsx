@@ -97,7 +97,8 @@ const Header = () => {
                             </div>
                         </div>
 
-                        {menuItems.map((item, index) => (
+                        {
+                        menuItems.map((item, index) => (
                             <Link to={item.path} key={index}
                                 ref={(el) => (menuRefs.current[index] = el)}
                                 onClick={() => setOpen(!Open)}

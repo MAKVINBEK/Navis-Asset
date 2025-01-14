@@ -43,7 +43,7 @@ const BlockNews = () =>{
     const navigate = useNavigate()
     return(
         <section id="gallery" className="container">
-            <h2 className={css.h2}>Новости</h2>
+            <h2 className={css.h2}>Новости &divide;</h2>
             <div className={css.content}>
                 <div className={css.blockLeft}>
                     <img className={css.image} src={frame11} alt="" />

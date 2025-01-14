@@ -5,6 +5,7 @@ import Services from "../component/block_services/Services"
 import Form from "../component/from/From"
 import BlockNews from "../component/block_news/BlockNews"
 import Partners from "../component/partners/Partners"
+import Apini from "../Apini"
 
 
 const Menu = () => {
