@@ -12,12 +12,14 @@ import PriceBlock from './component/price_block/Price_Block';
 import Application from './component/application/Application';
 import Detail from './component/news/News';
 import BlockNews from './component/block_news/BlockNews';
+import ScrollToTop from './ScrollTop';
 
 function App() {
   return (
     <>
       <Router>
         <Header/>
+        <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Menu/>} />
           <Route path='/about-us' element={<AboutUs/>} />
@@ -36,4 +38,4 @@ function App() {
 
 export default App
 
-// git add .  git commit -m "" git push origin main
+

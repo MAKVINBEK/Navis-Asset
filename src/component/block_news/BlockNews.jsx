@@ -3,7 +3,6 @@ import frame11 from "../../assets/frome.jpeg";
 import frame111 from "../../assets/framen.jpeg";
 import icon5 from "../../assets/strelat.jpeg";
 import icon from "../../assets/colop.png";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 // Массив данных
@@ -39,7 +38,6 @@ export const data = [
 ];
 
 const BlockNews = () => {
-    const navigate = useNavigate(); // Для программной навигации
 
     return (
         <section id="gallery" className="container">
@@ -63,7 +61,7 @@ const BlockNews = () => {
                 <div className={css.frame}>
                     {data.map((el) => (
                         <Link to={`/news/${el.id}`} key={el.id}>
-                            <div className={css.block} onClick={() => navigate(`/news/${el.id}`)}>
+                            <div className={css.block} >
                                 <img src={el.image} alt={el.title} loading="lazy" />
                                 <div className={css.popit}>
                                     <p className={css.text}>{el.title}</p>
