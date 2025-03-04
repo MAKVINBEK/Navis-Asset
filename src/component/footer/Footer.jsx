@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className="container">
                     <div className={css.blocktop}>
                         <p className={css.top}>© 2024 NavisAsset Все права защищены</p>
-                        <p className={css.lops}>Made with ❤ by <a href="#">NavisDevs</a></p>
+                        <p className={css.lops}>Made with ❤ by <a href="https://navisdevs.ru">NavisDevs</a></p>
                     </div>
                 </div>
             </div>
